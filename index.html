@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
@@ -18,7 +20,18 @@
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
 
                 <form action="login.js" method="post">
-
+                    <div class="campo">
+                        <input type="email" name="login" id="ilogin" placeholder="seu e-mail" required maxlength="30">
+                        <label for="ilogin"><span class="material-icons">&#xe7fd;</span></label>
+                    </div>
+                    <div class="campo">
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" required minlength="8" maxlength="20">
+                        <label for="isenha"><span class="material-icons">&#xe897;</span></label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html">
+                        Esqueci a senha<span class="material-icons">&#xec0a;</span>
+                    </a>
                 </form>
             </div>
         </section>
